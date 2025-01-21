@@ -1,9 +1,9 @@
 import React from "react";
 import { cn } from "@/lib/utils";
-import { Twitter, Github, Facebook, Instagram } from "lucide-react";
+import { Twitter, Github, Facebook, Instagram, Send } from "lucide-react";
 
 type SocialIconProps = {
-  platform: "twitter" | "github" | "facebook" | "instagram";
+  platform: "twitter" | "github" | "facebook" | "instagram" | "telegram";
   href: string;
   className?: string;
 };
@@ -13,11 +13,12 @@ const icons = {
   github: Github,
   facebook: Facebook,
   instagram: Instagram,
+  telegram: Send
 };
 
 const SocialIcon = ({ platform, href, className }: SocialIconProps) => {
   const Icon = icons[platform];
-  
+
   return (
     <a
       href={href}

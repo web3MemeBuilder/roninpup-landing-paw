@@ -48,8 +48,8 @@ const Index = () => {
 
         {/* Social Icons */}
         <div className="flex justify-center space-x-6 pt-2">
-          <SocialIcon platform="twitter" href="https://twitter.com" />
-          <SocialIcon platform="github" href="https://github.com" />
+          <SocialIcon platform="twitter" href="https://x.com/RoninPupMeme" />
+          <SocialIcon platform="telegram" href="https://t.me/roninpupmeme" />
         </div>
       </div>
     </div>
