@@ -17,7 +17,7 @@ const BuyButton = ({ className, onClick }: BuyButtonProps) => {
         className
       )}
     >
-      Buy Now
+      Coming Soon...
     </button>
   );
 };
