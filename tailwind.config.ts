@@ -19,6 +19,7 @@ export default {
     },
     extend: {
       colors: {
+        border: "hsl(var(--border))",
         ronin: {
           primary: "#9b87f5",
           light: "#D6BCFA",
