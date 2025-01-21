@@ -1,0 +1,1 @@
+export const BUY_LINK = "https://tama.meme/token/0x1c5401f1fba18de7ddc1960d0747cefcc745fc43"

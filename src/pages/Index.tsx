@@ -1,19 +1,21 @@
 import React from "react";
 import BuyButton from "@/components/BuyButton";
 import SocialIcon from "@/components/SocialIcon";
+import { BUY_LINK } from "@/utils/constants";
 
 const Index = () => {
   const handleBuyClick = () => {
-    console.log("Buy button clicked");
-    // Add buy functionality here
+    window.open(BUY_LINK, "_blank");
   };
 
   return (
     <div
       className="min-h-screen bg-gradient-to-b from-white to-ronin-gray relative flex flex-col items-center justify-center p-2"
       style={{
-        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M22.5 24a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0-2a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM45 24a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0-2a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM22.5 47a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0-2a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM45 47a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0-2a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z'/%3E%3C/g%3E%3C/svg%3E")`,
-        backgroundSize: '60px 60px'
+        // backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M22.5 24a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0-2a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM45 24a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0-2a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM22.5 47a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0-2a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM45 47a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0-2a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z'/%3E%3C/g%3E%3C/svg%3E")`,
+        backgroundImage: `url("dogpaw.svg")`,
+        backgroundSize: '60px 60px',
+        backgroundPosition: '0 0, 21px 21px', // Adjust position to create diagonal effect
       }}
     >
       <div className="max-w-4xl w-full text-center space-y-4">
