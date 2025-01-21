@@ -21,6 +21,7 @@ export default {
       colors: {
         border: "hsl(var(--border))",
         background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
         ronin: {
           primary: "#9b87f5",
           light: "#D6BCFA",
